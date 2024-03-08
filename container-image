@@ -105,11 +105,11 @@ frobulator.script "Setting up ${script#*-}"
 
 # variables ////////////////////////////////////////////////////////////////////
 
-distribution_name="debian"
+distribution_name="ubuntu"
 
-distribution_version="12"
+distribution_version="23.04"
 
-distribution_codename="bookworm"
+distribution_codename="lunar"
 
 # defaults /////////////////////////////////////////////////////////////////////
 
@@ -632,7 +632,7 @@ image_environment () {
 	# generate environment '$PATH' variable
 
 	ROOT="${PREFIX}"/cnt/"${distribution_name}"/"${distribution_version}"
-	
+
 	# set path:
 	# in order of retreival
 
@@ -670,7 +670,7 @@ image_environment () {
 	PATH=${PATH}
 	PREFIX=${PREFIX}
 	FILE
-	
+
 	unset ROOT
 }
 
