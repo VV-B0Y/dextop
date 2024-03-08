@@ -459,7 +459,7 @@ utility_intent () {
 		container-packages
 		container-failsafe
 		container-session
-		container-settings
+		#container-settings
 		container-user
 	)
 
